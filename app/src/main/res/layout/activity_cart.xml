@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.CartActivity">
+
+
+    <ListView
+        android:id="@+id/lstcart"
+        android:layout_width="391dp"
+        android:layout_height="415dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegister_Login_xml" />
+
+    <TextView
+        android:id="@+id/txtRegister_Login_xml"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ordered Items"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstcart"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/lbl_gtotal"
+            android:layout_width="124dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="10dp"
+            android:text="Total Payment"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="551dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Rs."
+            android:textAlignment="center"
+
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvgtot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.0"
+            android:textAlignment="center"
+
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/butedit"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Edit"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/butremove"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Remove"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/butchkout"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/butedit"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/butchkout"
+        android:layout_width="116dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="12dp"
+        android:text="CheckOut"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

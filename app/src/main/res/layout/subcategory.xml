@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ImgVw_subCategory"
+        android:layout_width="109dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/background5"
+        android:scaleType="fitXY"
+
+
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TvsubCategory_Name"
+        android:layout_width="311dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ImgVw_Category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="108dp"
+        android:background="@drawable/list_background"
+        android:text="subcategory_name"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/ImgVw_subCategory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="420dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/background5">
+
+            <TableRow>
+
+                <com.loopj.android.image.SmartImageView
+                    android:id="@+id/ImageViewCategory"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="#D3D3D3"
+                    android:scaleType="fitXY"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtprdname"
+                    android:layout_width="110dp"
+                    android:layout_height="55dp"
+                    android:layout_alignTop="@+id/chkbox"
+                    android:layout_toRightOf="@+id/ImageViewCategory"
+                    android:singleLine="false"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txttotprice"
+                    android:layout_alignBottom="@+id/txttotprice"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/txtprdname"
+                    android:singleLine="false"
+                    android:text="Price ."
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txtqnt"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtprice"
+                    android:layout_alignBottom="@+id/txtprice"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/txtprice"
+                    android:text="Qty."
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txttotprice"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/chkbox"
+                    android:layout_alignBottom="@+id/chkbox"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/chkbox"
+                    android:layout_toRightOf="@+id/txtqnt"
+                    android:singleLine="false"
+                    android:text="Tprice"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:id="@+id/chkSel"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

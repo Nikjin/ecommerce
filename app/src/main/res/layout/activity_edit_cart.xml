@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.EditCartActivity">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="454dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/ImgVw_Edt_cart"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="15.93"
+            android:background="#999999"
+            android:scaleType="fitXY"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txteditname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txteditdes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/txteditquantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity" />
+
+                <EditText
+                    android:id="@+id/editquantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="1"></EditText>
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txteditprice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/butupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15.93"
+            android:text="Update" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

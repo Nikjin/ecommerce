@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/ImgVw_product"
+        android:layout_width="335dp"
+        android:layout_height="293dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/background5"
+
+        android:scaleType="fitXY"
+
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/Tvproduct_Name"
+        android:layout_width="335dp"
+        android:layout_height="93dp"
+        android:layout_below="@+id/ImgVw_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/list_background"
+        android:text="product_name"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImgVw_product" />
+
+</android.support.constraint.ConstraintLayout>

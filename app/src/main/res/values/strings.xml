@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ecommerce</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_sub_category">SubCategoryActivity</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_adaptor_category">AdaptorCategory</string>
+    <string name="title_activity_adaptor_sub_category">AdaptorSubCategory</string>
+    <string name="title_activity_adaptor_product">AdaptorProduct</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+</resources>
